@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camp Duckabush Survey</title>
+    <link rel="stylesheet" href="css/survey-styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Camp Duckabush</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the camp
+    </p>
+    <form id="survey-form" action="post">
+      <label id="name-label" for="name">
+        Name
+        <input id="name" type="text" placeholder="Enter your name" required />
+      </label>
+      <label id="email-label" for="email">
+        Email
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </label>
+      <label id="number-label" for="number">
+        Age
+        <input id="number" type="number" min="8" max="15" placeholder="Age" />
+      </label>
+      <label for="dropdown"
+        >I was a...
+        <select id="dropdown">
+          <option value="day">Day camper</option>
+          <option value="overnight">Overnight camper</option>
+        </select>
+      </label>
+      <label>Would you recommend Camp Duckabush to a friend?</label>
+      <input type="radio" name="recommendation" id="yes" value="yes" />
+      <label for="yes">Yes!</label>
+      <input type="radio" name="recommendation" id="maybe" value="maybe" />
+      <label for="maybe">Maybe</label>
+      <input type="radio" name="recommendation" id="no" value="no" />
+      <label for="no">No</label>
+
+      <label>What were your favorite camp activities?</label>
+      <input type="checkbox" value="capture" id="capture" />
+      <label for="capture">Capture the Flag</label>
+      <input type="checkbox" value="crafts" id="crafts" />
+      <label for="crafts">Crafts</label>
+      <input type="checkbox" value="obstacle" id="obstacle" />
+      <label for="obstacle">Obstacle Course</label>
+      <input type="checkbox" value="smores" id="smores" />
+      <label for="smores">Smores</label>
+      <input type="checkbox" value="hiking" id="hiking" />
+      <label for="hiking">Hiking</label>
+      <input type="checkbox" value="zipline" id="zipline" />
+      <label for="ziplining">Ziplining</label>
+      <input type="checkbox" value="canoeing" id="canoeing" />
+      <label for="canoeing">Canoeing</label>
+      <input type="checkbox" value="stories" id="stories" />
+      <label for="stories">Telling Ghost Stories</label>
+
+      <label for="suggestions"
+        >What would you like to see improved in the camp?</label
+      >
+      <textarea
+        id="suggestions"
+        cols="30"
+        rows="5"
+        placeholder="
+      More ice cream, less mosquitoes, ..."
+      ></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
