@@ -13,7 +13,7 @@ app.use(
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/reg-form.html");
+  res.sendFile(__dirname + "/public/disney-tribute.html");
 });
 
 app.listen(3000, function () {

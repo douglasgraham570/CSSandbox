@@ -1,0 +1,22 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  width: 80%;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+ul {
+  padding: 0;
+}
