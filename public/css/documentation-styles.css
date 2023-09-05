@@ -1,0 +1,6 @@
+/*Media query for Mobile Devices*/
+@media (min-width: 480px) {
+  navbar {
+    display: block;
+  }
+}
