@@ -4,26 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Landing Page</title>
-    <link rel="stylesheet" href="product-styles.css" />
+    <link rel="stylesheet" href="css/product-styles.css" />
+    <script
+      src="https://kit.fontawesome.com/f19ef38383.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header">
       <img src="" alt="" id="header-img" />
       <nav id="nav-bar">
-        <a href="#features" id="nav-link">Features</a>
-        <a href="#demo" id="nav-link">How It Works</a>
-        <a href="#pricing" id="nav-link">Pricing</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#demo" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
       </nav>
     </header>
 
     <div>
       <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <input type="email" placeholder="Enter your email address" />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email address"
+        />
         <input type="submit" id="submit" />
       </form>
     </div>
 
-    <div id="features"></div>
+    <div id="features">
+      <i class="fa-solid fa-blender" style="color: #48dae5"></i>
+    </div>
 
     <div id="demo">
       <video

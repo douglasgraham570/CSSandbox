@@ -1,14 +1,15 @@
 #nav-bar {
-  position: fixed;
+  /*position: fixed;*/
 }
 
 #pricing {
   display: flex;
 }
 
-/* Navbar should be vertical on small viewport, horizontal on large*/
+/* Navbar should be vertical on small viewport, horizontal on large
 @media (max-width: 640px) {
   #nav-link {
     display: block;
   }
 }
+*/
