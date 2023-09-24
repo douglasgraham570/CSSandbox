@@ -1,9 +1,36 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(aquamarine, cyan);
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: xx-large;
+}
+
 #nav-bar {
   /*position: fixed;*/
 }
 
+#form {
+  text-align: center;
+}
+
+#demo {
+  text-align: center;
+}
+
 #pricing {
-  display: flex;
+}
+
+footer {
+  background: linear-gradient(aquamarine, cyan);
+  height: 50px;
+  text-align: right;
 }
 
 /* Navbar should be vertical on small viewport, horizontal on large
