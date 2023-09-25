@@ -9,14 +9,22 @@
       src="https://kit.fontawesome.com/f19ef38383.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header id="header">
-      <i
-        class="fa-solid fa-blender"
-        style="color: #48dae5; font-size: 2.5em"
-      ></i>
-      <h1>BLENDERA</h1>
+      <div class="logo">
+        <i
+          class="fa-solid fa-blender"
+          style="color: black; font-size: 2.5em"
+        ></i>
+        <h1>BLENDERA</h1>
+      </div>
       <nav id="nav-bar">
         <a href="#features" class="nav-link">Features</a>
         <a href="#demo" class="nav-link">How It Works</a>
@@ -33,15 +41,18 @@
           type="email"
           placeholder="Enter your email address"
         />
-        <input type="submit" id="submit" />
+        <br />
+        <input type="submit" id="submit" value="GET STARTED" />
       </form>
     </div>
 
     <div id="features">
       <h2>Features</h2>
-      <li>Blends any fruit</li>
-      <li>Minimal Clean Up</li>
-      <li>Quiet</li>
+      <ul>
+        <li>Blends any Fruit</li>
+        <li>Portable</li>
+        <li>Won't be heard anywhere but the kitchen!</li>
+      </ul>
     </div>
 
     <div id="demo">
@@ -58,9 +69,11 @@
 
     <div id="pricing">
       <h2>Pricing</h2>
-      <li>Small: $50</li>
-      <li>Medium: $75</li>
-      <li>Large: $100</li>
+      <ul>
+        <li>Small: $50</li>
+        <li>Medium: $75</li>
+        <li>Large: $100</li>
+      </ul>
     </div>
 
     <footer>
