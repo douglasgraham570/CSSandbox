@@ -13,7 +13,7 @@ app.use(
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/product-landing.html");
+  res.sendFile(__dirname + "/public/portfolio.html");
 });
 
 app.listen(3000, function () {

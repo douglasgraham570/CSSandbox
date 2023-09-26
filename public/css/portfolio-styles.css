@@ -2,4 +2,37 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.welcome-container {
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-size: medium;
+}
+
+h3 {
+  font-size: smaller;
+}
+
+.project-container {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.project-tile {
+  aspect-ratio: 1 / 1;
+  width: 40%;
+  background-color: rgb(161, 161, 255);
+  margin-left: 10px;
+  outline: 3px solid black;
 }
