@@ -1,19 +1,15 @@
 :root {
-  --penguin-face: white;
-  --penguin-picorna: orange;
-  --penguin-skin: gray;
+  --main-bg-color: #83c8c1;
+  --main-bg-gradient: linear-gradient(to bottom right, #83c8c1, #7cc2ad);
 }
 
+body,
 html {
   box-sizing: border-box;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 nav {
@@ -28,6 +24,7 @@ nav {
 
 a {
   text-decoration: none;
+  font-weight: 400;
   color: white;
   padding-right: 30px;
 }
@@ -35,13 +32,10 @@ a {
 .welcome-container {
   display: flex;
   color: white;
-  margin-bottom: 100px;
-  background-color: rgb(
-    238,
-    199,
-    170
+  background-color: var(
+    --main-bg-color
   ); /* For browsers that do not support gradients */
-  background-image: linear-gradient(to bottom right, #83c8c1, #7cc2ad);
+  background-image: var(--main-bg-gradient);
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -70,14 +64,24 @@ h3 {
   height: 40%;
   display: flex;
   overflow: wrap;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .project-tile {
   aspect-ratio: 1 / 1;
-  width: 40%;
-  background-color: #e8a87c;
-  margin-left: 10px;
+  width: calc(25% - 10px);
+  background-color: #f6d2af;
+  margin: 0 5px;
+}
+
+#contact {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-bg-color);
+  background-image: var(--main-bg-gradient);
+  color: white;
+  height: 300px;
 }
 
 /* Navbar is centered for small screens */
