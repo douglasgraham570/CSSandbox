@@ -12,6 +12,15 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.tab {
+  padding: 0 15px;
+}
+
 nav {
   display: flex;
   position: fixed;
@@ -22,11 +31,13 @@ nav {
   background-color: black;
 }
 
+.tab-container:last-child {
+  padding-right: 15px;
+}
+
 a {
   text-decoration: none;
-  font-weight: 400;
   color: white;
-  padding-right: 30px;
 }
 
 .welcome-container {
@@ -55,23 +66,43 @@ h2 {
   font-style: italic;
 }
 
-h3 {
-  font-size: smaller;
+h3,
+a {
+  font-size: 24;
+  font-weight: 400;
 }
 
 .project-container {
-  width: 100%;
-  height: 40%;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   overflow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
   margin-bottom: 50px;
 }
 
 .project-tile {
   aspect-ratio: 1 / 1;
-  width: calc(25% - 10px);
+  height: 400px;
   background-color: #f6d2af;
+  object-fit: cover;
   margin: 0 5px;
+  border-radius: 5px;
+  /* outline: 3px solid black; */
+}
+
+.project-name {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: -40px 0 0 0;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(228, 151, 67);
+  border-radius: 0 0 5px 5px;
 }
 
 .contact-container {
@@ -90,8 +121,8 @@ h3 {
     justify-content: center;
   }
 
-  a {
-    padding: 0 15px;
+  .tab-container:last-child {
+    padding-right: 0px;
   }
 
   .contact-container {

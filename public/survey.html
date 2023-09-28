@@ -11,6 +11,7 @@
     <p id="description">
       Thank you for taking the time to help us improve the camp
     </p>
+
     <form id="survey-form" action="post">
       <label id="name-label" for="name">
         Name
@@ -27,7 +28,7 @@
       </label>
       <label id="number-label" for="number">
         Age
-        <input id="number" type="number" min="8" max="15" placeholder="Age" />
+        <input id="number" type="number" min="8" max="15" placeholder="10" />
       </label>
       <label for="dropdown"
         >I was a...
@@ -36,6 +37,8 @@
           <option value="overnight">Overnight camper</option>
         </select>
       </label>
+
+      <div class="spacer"></div>
       <label>Would you recommend Camp Duckabush to a friend?</label>
       <input type="radio" name="recommendation" id="yes" value="yes" />
       <label for="yes">Yes!</label>
@@ -43,6 +46,8 @@
       <label for="maybe">Maybe</label>
       <input type="radio" name="recommendation" id="no" value="no" />
       <label for="no">No</label>
+
+      <div class="spacer"></div>
 
       <label>What were your favorite camp activities?</label>
       <input type="checkbox" value="capture" id="capture" />
@@ -62,18 +67,22 @@
       <input type="checkbox" value="stories" id="stories" />
       <label for="stories">Telling Ghost Stories</label>
 
-      <label for="suggestions"
-        >What would you like to see improved in the camp?</label
-      >
-      <textarea
-        id="suggestions"
-        cols="30"
-        rows="5"
-        placeholder="
-      More ice cream, less mosquitoes, ..."
-      ></textarea>
+      <div class="spacer"></div>
 
-      <button type="submit" id="submit">Submit</button>
+      <div class="suggestions">
+        <label for="suggestions"
+          >What would you like to see improved in the camp?</label
+        >
+        <textarea
+          id="suggestions"
+          cols="30"
+          rows="5"
+          placeholder="
+      More ice cream, less mosquitoes, ..."
+        ></textarea>
+        <br />
+        <button type="submit" id="submit">Submit</button>
+      </div>
     </form>
   </body>
 </html>
@@ -82,4 +91,3 @@
   src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
   id="logo"
 />
-<h1>HTML/CSS Quiz</h1>
