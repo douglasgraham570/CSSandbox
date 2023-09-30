@@ -78,6 +78,11 @@ h3 {
   display: inline;
 }
 
+#project-tab-click {
+  margin: -60px;
+  position: absolute;
+}
+
 .project-container {
   display: flex;
   flex-direction: row;
