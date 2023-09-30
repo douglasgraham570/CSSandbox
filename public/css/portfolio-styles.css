@@ -12,11 +12,6 @@ html {
   font-family: "Lato", sans-serif;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-}
-
 .tab {
   padding: 0 15px;
 }
@@ -90,7 +85,11 @@ a {
   object-fit: cover;
   margin: 0 5px;
   border-radius: 5px;
-  /* outline: 3px solid black; */
+  outline: 3px solid black;
+}
+
+img {
+  width: 100%;
 }
 
 .project-name {
