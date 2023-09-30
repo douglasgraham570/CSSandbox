@@ -24,6 +24,7 @@ nav {
   justify-content: right;
   align-items: center;
   background-color: black;
+  z-index: 1;
 }
 
 .tab-container:last-child {
@@ -85,7 +86,6 @@ a {
   object-fit: cover;
   margin: 0 5px;
   border-radius: 5px;
-  outline: 3px solid black;
 }
 
 img {
@@ -111,7 +111,7 @@ img {
   background-color: var(--main-bg-color);
   background-image: var(--main-bg-gradient);
   color: white;
-  height: 300px;
+  height: 400px;
 }
 
 /* Navbar is centered for small screens */
