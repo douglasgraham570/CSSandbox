@@ -54,6 +54,7 @@ h1 {
   font-weight: 900;
   font-style: bold;
   text-align: center;
+  padding: 0 50px;
 }
 
 h2 {
@@ -75,7 +76,7 @@ a {
 }
 
 h3 {
-  display: inline;
+  padding: 0 30px;
 }
 
 #project-tab-click {
@@ -131,6 +132,12 @@ img {
   height: 300px;
 }
 
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
 i {
   padding-right: 3px;
 }
@@ -146,6 +153,10 @@ i {
   }
 
   .contact-container {
-    height: 400px;
+    height: 500px;
+  }
+
+  .contact-links {
+    flex-direction: column;
   }
 }
