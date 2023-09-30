@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #83c8c1;
-  --main-bg-gradient: linear-gradient(to bottom right, #83c8c1, #7cc2ad);
+  --main-bg-gradient: linear-gradient(to bottom right, #b6eee9, #5af7c8);
 }
 
 body,
@@ -20,7 +20,7 @@ nav {
   display: flex;
   position: fixed;
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   justify-content: right;
   align-items: center;
   background-color: black;
@@ -39,9 +39,9 @@ a {
 .welcome-container {
   display: flex;
   color: white;
-  background-color: var(
-    --main-bg-color
-  ); /* For browsers that do not support gradients */
+  /* background-color: var( */
+  /* --main-bg-color */
+  /* ); For browsers that do not support gradients */
   background-image: var(--main-bg-gradient);
   justify-content: center;
   align-items: center;
@@ -62,10 +62,20 @@ h2 {
   font-style: italic;
 }
 
+h1,
+h2,
+h3 {
+  color: black;
+}
+
 h3,
 a {
   font-size: 24;
   font-weight: 400;
+}
+
+h3 {
+  display: inline;
 }
 
 .project-container {
@@ -113,11 +123,15 @@ img {
   background-color: var(--main-bg-color);
   background-image: var(--main-bg-gradient);
   color: white;
-  height: 400px;
+  height: 300px;
+}
+
+i {
+  padding-right: 3px;
 }
 
 /* Navbar is centered for small screens */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   nav {
     justify-content: center;
   }
